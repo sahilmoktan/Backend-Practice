@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Document</title>
+    <style>
+        body {
+  position: relative;
+  overflow: hidden;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  text-align: center;
+  font-family: "nexa_light";
+  font-size: 18px;
+  font-weight: normal;
+}
+ul {
+  text-align: left;
+  color: #fff;
+  font-family: "nexa_light";
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/*--------------------------------HOME PAGE SECTIONS------------------------------*/
+
+.h2title {
+  font-family: "REIS-Regular";
+  font-size: 100px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.h2title-smaller {
+  font-family: "REIS-Regular";
+  font-size: 40px;
+  margin: 0px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.h2CTAtitleCaseStudies {
+  font-family: "REIS-Regular";
+  font-size: 50px;
+  margin: 0px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.h2CTAtitleHowWeWork {
+  font-family: "REIS-Regular";
+  font-size: 50px;
+  margin: 0px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.h2CTAtitleadditionalServices {
+  font-family: "REIS-Regular";
+  font-size: 50px;
+  margin: 0px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.lightblue {
+  color: #08d1de;
+}
+.fucsia {
+  color: #de1879;
+}
+.white-color {
+  color: #fff;
+}
+.flashyGreen {
+  color: #0dfc0d;
+}
+.deepRed {
+  color: #d21e10;
+}
+.brightYellow {
+  color: #ff0;
+}
+.p-page-content {
+  text-align: justify;
+  color: #fff;
+  font-family: "nexa_light";
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 0px;
+}
+.section-p {
+  color: #fff;
+  font-family: "nexa_light";
+  font-size: 30px;
+  font-weight: 500;
+}
+.section-btn {
+  position: relative;
+  font-family: "OstrichSans-Bold";
+  width: 250px;
+  font-size: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-top: 45px;
+  overflow: hidden;
+}
+.section-btn-page {
+  position: relative;
+  font-family: "OstrichSans-Bold";
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.section-btn > a {
+  font-family: "OstrichSans-Bold";
+  text-decoration: none;
+}
+.section-btn-page > a {
+  font-family: "OstrichSans-Bold";
+  text-decoration: none;
+}
+.section-btn-hover {
+  font-family: "OstrichSans-Bold";
+  position: absolute;
+  left: -254px;
+  top: 0px;
+  width: 250px;
+  height: 80px;
+}
+.section-btn-hover-page {
+  font-family: "OstrichSans-Bold";
+  position: absolute;
+  left: -500px;
+  top: 0px;
+  width: 300px;
+  height: 80px;
+}
+.section-btn-hover.fucsia {
+  background: #de1879;
+}
+.section-btn-hover.lightblue {
+  background: #08d1de;
+}
+.section-btn-hover.deepRed {
+  background: #d21e10;
+}
+.section-btn-hover.flashyGreen {
+  background: #0dfc0d;
+}
+.section-btn-hover.lightblue {
+  background: #08d1de;
+}
+.text-hover {
+  position: absolute;
+  left: 25px;
+  width: 200px;
+  font-size: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.text-hover > a {
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+}
+
+.lightblue-btn {
+  color: #08d1de;
+  border: 4px solid #08d1de;
+}
+.fucsia-btn {
+  color: #de1879;
+  border: 4px solid #de1879;
+}
+.fucsia-btn-page {
+  background-color: #de1879;
+}
+.white-btn {
+  color: #ffffff;
+  border: 4px solid #ffffff;
+}
+.flashyGreen-btn {
+  color: #0dfc0d;
+  border: 4px solid #0dfc0d;
+}
+.deepRed-btn {
+  color: #d21e10;
+  border: 4px solid #d21e10;
+}
+video {
+  opacity: 0.2;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*===========================================SINGLE PAGE=====================================================*/
+#wrapper-page {
+  width: 100%;
+  min-height: 100vh;
+}
+#wrapper-page.web-design-page {
+  background-image: url(../img/web-design-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: top;
+}
+.side-bar-content {
+  position: absolute;
+  background: rgba(0%, 0%, 0%, 0.8);
+  width: 22%;
+  height: 100%;
+  padding: 25px;
+  text-align: center;
+}
+
+article {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px;
+  height: 50%;
+}
+#cta-caseStudies {
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  background: #000;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+.d > .h2CTAtitleCaseStudies {
+  position: absolute;
+  left: 80%;
+  top: 23%;
+}
+#cta-additionalServices {
+  position: absolute;
+  left: 47%;
+  top: 30%;
+  background: #000;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+.d1 > .h2CTAtitleadditionalServices {
+  position: absolute;
+  left: 47%;
+  top: 23%;
+}
+#cta-howWeWork {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  background: #000;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+.d2 > .h2CTAtitleHowWeWork {
+  position: absolute;
+  left: 50%;
+  top: 73%;
+}
+
+#caseStudies {
+  position: absolute;
+  left: -1000px;
+}
+#additionalServices {
+  position: absolute;
+  left: -1000px;
+}
+/*========================================== TOOLS ====================================================*/
+/*=============================================spaces==================================================*/
+.space15 {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+/*============================================scrollbar================================================*/
+.scrollbar-page-main-content {
+  min-height: 30vh;
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+#scrollbar-fucsia::-webkit-scrollbar {
+  width: 16px;
+  background-color: rgba(0%, 0%, 0%, 0.3);
+  border-radius: 10px;
+}
+#scrollbar-fucsia::-webkit-scrollbar-thumb {
+  background-color: #de1879;
+  border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+    
+
+        <div id="wrapper-page" class="web-design-page">
+        
+    <!--Links On the Right hand side-->
+    <div class="d"><h2 class="h2CTAtitleCaseStudies fucsia">Case Studies</h2><div id="cta-caseStudies"></div>
+    </div>
+    <div class="d1"><h2 class="h2CTAtitleadditionalServices fucsia">Additional Services</h2><div id="cta-additionalServices"></div>
+    </div>
+    <div class="d2"><h2 class="h2CTAtitleHowWeWork fucsia">How We Work</h2><div id="cta-howWeWork"></div></div>
+    
+      
+      
+        
+        
+      
+      <!--sidebar How we work-->
+     <div id="howWeWork" class="side-bar-content">
+        <header>    
+    <h2 class="h2title-smaller fucsia">How We Work</h2>
+    </header>
+        <div class="space15"></div>
+        <article class="scrollbar-page-main-content" id="scrollbar-fucsia">
+        <p class="p-page-content">
+        Sonic Crew specializes in web design and is making a name for itself for creating stunning websites that look
+        gorgeous on every device without sacrificing navigability or practicality.</p>
+        <p class="p-page-content">
+        We work closely with our clients and really aim to identify with their vision. That allows us to create bespoke
+        websites that fully serve their purposes and perform to meet and exceed our clients’ expectations.</p>
+        <p class="p-page-content">
+            We use HTML5 and CSS3 with Javascript to create a well designed UI and UX experience, and are up to date with
+        the latest trends in web design. We also design Wordpress websites for all those clients who want to 
+        update and take care of the maintenance by themselves using an intuitive Content Management System. With all our Wordpress websites we offer up to 4 x 1 hour
+        complimentary training sessions in our office in Tileyard Studios or via Skype, to show how to use a new website effectively and help with technical questions.
+        </p>
+        </article>
+        <footer>
+        <div class="section-btn-page fucsia-btn-page"><a class="white-color" href="#">contact us</a>     
+        </div>
+        </footer>
+    </div><!--End side-bar-How We Work-->
+    
+        
+        
+        
+        
+        
+    <!--Sidebar Case Studies-->
+    <div id="caseStudies" class="side-bar-content">
+        <header>
+    <h2 class="h2title-smaller fucsia">Case Studies</h2>
+    </header>
+    <div class="space15"></div>
+        <article class="scrollbar-page-main-content" id="scrollbar-fucsia">
+        <p class="p-page-content"><strong>
+        Tileyard Studios – Web Design &amp; Maintenance</strong></p>
+        <p class="p-page-content">
+        Tileyard Studios is an exciting creative hub based just north of King’s Cross in London. It is home to world-class music producers and artists (Mark Ronson, Basement Jaxx, The Prodigy to name a few) and a mix of creative companies operating predominantly in music, tech and fashion. Tileyard Studios were looking to get their website 
+        redesigned, with an emphasis on the spaces available on site and the people who are part of their Community. They also wanted a CMS that allowed them to update their 
+        website with news and blog posts regularly. You can check the website we’ve designed for Tileyard Studios clicking on the icon below.</p>
+        <p class="p-page-content"><strong>Escape Artist Management – Web Design</strong></p>
+        <p class="p-page-content"><strong>Tileyard Music – Web Design</strong></p>
+        </article>
+        <footer>
+        <div class="section-btn-page fucsia-btn-page"><a class="white-color" href="#">contact us</a></div>
+        </footer>
+    </div><!--End side-bar-Case Studies-->
+    
+        
+        
+        
+    <!--Sidebar-Additional Services-->
+    <div id="additionalServices" class="side-bar-content">
+        <header>
+    <h2 class="h2title-smaller fucsia">Additional Services</h2>
+    </header>
+        <div class="space15"></div>
+        <article class="scrollbar-page-main-content" id="scrollbar-fucsia">
+        <p class="p-page-content">For all those clients who need a more comprehensive solution for their digital needs, we also offer a wide range of services, including:</p>
+        <ul>
+                <li>Copywriting</li>
+                <li>Photography</li>
+                <li>Website maintenance</li>
+                <li>SEO</li>
+                <li>Social Media Management</li>
+                <li>Online Advertising Design</li>
+                <li>PPC Management</li>
+                <li>Newsletter Design and Management</li>
+                <li>Fan Clubs and Login Memberships, paid and free</li>
+            
+           </ul>
+        <p class="p-page-content">CTA: Contact us for a FREE 30 min consultation</p>
+        </article>
+        <footer>
+        <div class="section-btn-page fucsia-btn-page"><a class="white-color" href="#">contact us</a>
+        </div>
+        </footer>
+    </div><!--End sidebar-Additional Services-->
+    
+        
+        
+        
+    </div><!--End Wrapper Page-->
+    
+    
+</body>
+</html>
