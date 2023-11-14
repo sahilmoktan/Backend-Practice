@@ -37,3 +37,30 @@ to create new app withh generator
     .then
     cd appname
     npm i
+    
+    
+<!-- mongodb
+    dbs, models, schema, collections, documents    -->
+    dbs explained on note picture, eg MongoDb => RentalHouse, Amazon family ko data => Models
+
+	install mongodb : for gui, OR u can connect in atlast(cloud v)
+	install mongoosejs : for coding : npm i mongoose
+	require & Setup connection  :
+	make schema :
+	create model :    
+     
+     	   const mongoose = require('mongoose')  //require:magu
+     	   mongoose.connect('mongodb://127.0.0.1:27017/practiceProject')  //setup connection: it creates database
+     	   //<node> mongose bata connect to mongodb localhost ko ... bata practiceproject ma
+     	   
+     	   const userschema = mongoose.Schema({
+            username: string,
+            name: string,
+            age: Number
+           })  // doucment ko kind ma hune rules
+
+           module.exports = mongoose.model("name", userschema)  // name:collection, it is Model
+     	   
+     	   
+    
+58:00
