@@ -1,4 +1,4 @@
-flash message: npm i connect-flash
+flash message: npm i connect-flash  =============================================
 don't forget to set session: npm i express-session
 put connect flash in  app.use function
 
@@ -8,3 +8,15 @@ abo hami /route ma jada error auuda flash message le respond gareko error agi ko
 
 indexjs /login ma flash message create gareu, /check ma flash message ko respond hereu
 use case: login route ma jana khoje but login ta vayena, but login vayena vanera arko route ma ta message dina paryo ni, euto route ko data arko ma access garnu lai flash message ko help linxau
+
+
+intermediate mongodb =============================================
+fully model path follow gareko xaina, routes/user.js mai mongoose lai set gareko xa, mongoo ma user = users
+/create ma lekhera hit garda data create hunxa mongoodb ma
+/find ma datako name send garera pauna sakinxa but
+    case sensetivity xa, uppera/lower case
+    so we use RegExp() but again similar included comes along
+    use: new RegExp(searchgarneName, flags:insesetive)
+    so again we use ^weNeed$ checks from both side
+    allowes no case sensetive even in middle letters are mixmached
+
