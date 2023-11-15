@@ -25,7 +25,7 @@ router.get("/check", function (req, res) {
 
 router.get("/create", async function (req, res) {
   let userdatea = await userModel.create({
-    username: "safalee",
+    username: "safaleo",
     nickname: "lama",
     discription: "smallgirl, class 11",
     categories: ["music", "guitaring", "computer"],
@@ -34,12 +34,30 @@ router.get("/create", async function (req, res) {
 });
 
 router.get("/find", async function (req, res) {
-  var a = new RegExp('^safalee$', 'i')
+  var a = new RegExp('^Safal$', 'i')
 
   let foundData = await userModel.find({
     username: a,
   });
   res.send(foundData);
 });
+
+router.get("/findcat", async function (req, res) {
+  
+  let foundData = await userModel.find({
+    categories: {$all: ['music']}
+  });
+  res.send(foundData);
+});
+
+router.get("/findbyDate", async function (req, res) {
+  var date1 = new Date ('2023-11-14')
+  var date2 = new Date ('2023-11-15')
+  let foundData = await userModel.find({
+  datecreated: {$gte: date1, $lte:date2}
+  })
+  res.send(foundData);
+
+})
 
 module.exports = router;

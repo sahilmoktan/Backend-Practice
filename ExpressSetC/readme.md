@@ -1,3 +1,5 @@
+endgame part2
+
 flash message: npm i connect-flash  =============================================
 don't forget to set session: npm i express-session
 put connect flash in  app.use function
@@ -13,10 +15,27 @@ use case: login route ma jana khoje but login ta vayena, but login vayena vanera
 intermediate mongodb =============================================
 fully model path follow gareko xaina, routes/user.js mai mongoose lai set gareko xa, mongoo ma user = users
 /create ma lekhera hit garda data create hunxa mongoodb ma
-/find ma datako name send garera pauna sakinxa but
+/find ma data ko name send garera pauna sakinxa but
     case sensetivity xa, uppera/lower case
     so we use RegExp() but again similar included comes along
     use: new RegExp(searchgarneName, flags:insesetive)
     so again we use ^weNeed$ checks from both side
     allowes no case sensetive even in middle letters are mixmached
+
+//find in array=> use below insted of username: 'safal' 
+        categories: {$all: ['music']}
+
+//find that are made in particular date
+    datecreated: {$gte: date1, $lte:date2}
+    $graterThenEqualto  $lessThenEqualto
+
+//find by specfic length of an field/catagory
+    video ko 1:05:00 najik or find ko bracket vitra
+    $expr:{
+        $and:[
+            {$gte:[{$strlencp:'nickname'},12]},
+            {$lte:[{$strlencp:'nickname'},20]},
+        ]
+    }
+
 
